@@ -64,13 +64,13 @@ crashlytics-build.properties
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/Project Namestation/[Ll]ibrary/
-/Project Namestation/[Tt]emp/
-/Project Namestation/[Oo]bj/
-/Project Namestation/[Bb]uild/
-/Project Namestation/[Bb]uilds/
-/Project Namestation/[Ll]ogs/
-/Project Namestation/[Uu]ser[Ss]ettings/
+/brackeys-game-jam-22.1/[Ll]ibrary/
+/brackeys-game-jam-22.1/[Tt]emp/
+/brackeys-game-jam-22.1/[Oo]bj/
+/brackeys-game-jam-22.1/[Bb]uild/
+/brackeys-game-jam-22.1/[Bb]uilds/
+/brackeys-game-jam-22.1/[Ll]ogs/
+/brackeys-game-jam-22.1/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
