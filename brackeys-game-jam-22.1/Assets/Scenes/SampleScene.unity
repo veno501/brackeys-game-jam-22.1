@@ -226,7 +226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: bf0d3dfef2c4bf045a84858064fa8f26, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4406155116359948159, guid: bf0d3dfef2c4bf045a84858064fa8f26, type: 3}
       propertyPath: m_LocalRotation.w
@@ -338,6 +338,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &243624461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243624456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60cd3f5059231a54fa72940068518969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MovingTurnSpeed: 360
+  m_StationaryTurnSpeed: 180
+  m_RunCycleLegOffset: 0.2
+  m_MoveSpeedMultiplier: 1
+  m_AnimSpeedMultiplier: 1
+  m_RaycastLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_SlopeAngleLimit: 45
 --- !u!1 &304030376 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: adaf5e361b297044385ffd19121690ab, type: 3}
@@ -1354,7 +1375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1489939216736538411, guid: bf511857081fb844ca213b4331571ac9, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1572506763134676981, guid: bf511857081fb844ca213b4331571ac9, type: 3}
       propertyPath: m_Layer
