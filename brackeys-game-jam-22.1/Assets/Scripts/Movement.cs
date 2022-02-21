@@ -7,10 +7,12 @@ public class Movement : MonoBehaviour
     public float speed = 5f;
     public float rotationSpeed = 10f;
     Rigidbody rbody;
+    Animator anim;
 
     void Awake()
     {
         rbody = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -32,5 +34,15 @@ public class Movement : MonoBehaviour
         Quaternion rot = Quaternion.LookRotation(dir, Vector3.up);
         rot = Quaternion.Lerp(rbody.rotation, rot, Time.deltaTime * rotationSpeed);
         rbody.MoveRotation(rot);
+
+
+        float forward = new Vector2(h, v).magnitude;
+        anim.SetFloat("Forward", forward * 1.0f, 0.02f, Time.deltaTime);
+
+        float turn = Vector3.SignedAngle(transform.forward, dir, Vector3.up);
+  			anim.SetFloat("Turn", turn, 0.02f, Time.deltaTime);
+
+				float turnAnim = Mathf.Sign(turn) * Mathf.Sqrt(Mathf.Abs(turn / 60f));
+				anim.SetFloat("CameraTurn", turnAnim, 0.1f, Time.deltaTime);
     }
 }
